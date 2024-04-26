@@ -10,6 +10,8 @@
 
 body {
   font-family: 'jetBrains Mono';
+  overflow-x: hidden;
+  color: rgb(52, 73, 94);
 }
 
 header {
@@ -17,13 +19,12 @@ header {
   background-size: cover;
   margin-top: 0;
   padding: 0;
-  filter: brightness(110%);
   width: 100vw;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 header > h1
 {
-  color: rgb(52, 73, 94);
   margin: auto;
   text-align: center;
   font-size: calc(1vw + 75px);
@@ -34,13 +35,13 @@ header > h1
 }
 
 header > h3 {
-  color: rgb(52, 73, 94);
   font-size: calc(0.8vw + 25px);
   padding: 5px 15px;
 } 
 
 nav {
   display: flex;
+  margin-bottom: 0;
 }
 
 nav > a {
@@ -53,6 +54,18 @@ nav > a {
   border: solid rgb(52, 73, 94);
   border-width: 10px 5px 8px 5px;
   margin: -1px;
+  transition: color 0.4s, background-color 0.4s;
+}
+
+nav > a:hover {
+  background-color: rgba(52, 73, 94, 0.65);
+  color: #ca8db8;
+}
+
+nav > a:active {
+  transition: 0.1s;
+  color: transparent;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 nav > a:first-child { border-left: 0; }
@@ -63,7 +76,39 @@ nav > a:last-child { border-right: 0; }
     flex-direction: column;
   }
   nav > a {
-    width: 100vw;
+    width: 100%;
     padding: 10px 0;
+    border-left: 0;
   }
+  nav > a:first-child { border-bottom: 10px;}
+  nav > a:last-child { border-top: 10px; }
+  section > p {
+    font-size: 10%;
+  }
+}
+
+body {
+  background: linear-gradient(to right, rgb(228, 246, 255), #e6fae9);
+}
+
+main {
+  border-radius: 30px;
+  border: rgba(0, 0, 0, 0.5) 5px solid;
+  padding: 0;
+  margin: 30px 15px 20px 15px;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.4) -10px 10px 5px;
+}
+
+main > h2 {
+  color: black;
+  text-align: center;
+  padding: 50px 0 20px 0;
+  font-size: 300%;
+}
+
+main > p {
+  color: black;
+  padding: 5%;
+  font-size: 150%;
 }
