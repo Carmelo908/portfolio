@@ -32,11 +32,13 @@ header > h1
   text-shadow: 
   3px 3px white, -3px 3px white, 
   3px -3px white, -3px -3px white;
+  color: rgb(52, 73, 94);
 }
 
 header > h3 {
   font-size: calc(0.8vw + 25px);
   padding: 5px 15px;
+  color: rgb(52, 73, 94);
 } 
 
 nav {
@@ -88,27 +90,52 @@ nav > a:last-child { border-right: 0; }
 }
 
 body {
-  background: linear-gradient(to right, rgb(228, 246, 255), #e6fae9);
+  background: linear-gradient(to right, rgb(138, 216, 255), #9affa9);
 }
 
-main {
+section {
   border-radius: 30px;
   border: rgba(0, 0, 0, 0.5) 5px solid;
-  padding: 0;
-  margin: 30px 15px 20px 15px;
-  background-color: rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  margin: 30px 2% 20px 2%;
+  background-color: rgba(0, 0, 0, 0.15);
   box-shadow: rgba(0, 0, 0, 0.4) -10px 10px 5px;
 }
 
-main > h2 {
+section > h2 {
   color: black;
   text-align: center;
-  padding: 50px 0 20px 0;
+  padding: 0 0 20px 0;
   font-size: 300%;
+  text-shadow: rgba(0, 0, 0, 0.3) -3px 0 1px;
 }
 
-main > p {
+section > p {
   color: black;
-  padding: 5%;
-  font-size: 150%;
+  padding: 10px 5%;
+  font-size: 140%;
+  text-shadow: rgba(0, 0, 0, 0.3) -2px 0 1px;
 }
+
+.project-article {
+  border: 4px rgba(0, 0, 0, 0.5) solid;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.project-article > h3 {
+  text-align: center;
+  font-size: 200%;
+  padding: 20px 40px 40px 40px;
+}
+
+.project-article > div > img {
+  width: calc(30% + 20px);
+}
+
+.project-article > div > p {
+  padding: 20px;
+}
+
+.project-article > div { display: flex }
