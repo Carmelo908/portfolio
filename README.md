@@ -1,2 +1,2 @@
 # portfolio
-## Personal portfolio for a school work 
+## This is a Personal portfolio for a school work 
