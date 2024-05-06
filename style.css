@@ -73,24 +73,8 @@ nav > a:active {
 nav > a:first-child { border-left: 0; }
 nav > a:last-child { border-right: 0; }
 
-@media (max-width: 700px) {
-  nav {
-    flex-direction: column;
-  }
-  nav > a {
-    width: 100%;
-    padding: 10px 0;
-    border-left: 0;
-  }
-  nav > a:first-child { border-bottom: 10px;}
-  nav > a:last-child { border-top: 10px; }
-  section > p {
-    font-size: 10%;
-  }
-}
-
 body {
-  background: linear-gradient(to right, rgb(138, 216, 255), #9affa9);
+  background: linear-gradient(to right, rgb(177, 223, 247), #adf1b8);
 }
 
 section {
@@ -139,3 +123,70 @@ section > p {
 }
 
 .project-article > div { display: flex }
+
+.skills-list {
+  padding: 40px 15%;
+}
+
+.skills-list > li {
+  padding: 10px 0;
+  font-size: 120%;
+}
+
+h3 {
+  font-size: 100%;
+  text-align: center;
+  padding: 40px;
+}
+
+.contact-button {
+  width: 30%;
+  border-radius: 60px;
+  border: rgb(52, 73, 94) solid 8px;
+  margin: 50px auto;
+  background-image: url(./img/header.jpg);
+  background-size: 600px;
+}
+
+.github-contact {
+  display: block;
+  text-align: center;
+  font-size: 250%;
+  padding: 20px;
+  text-decoration: none;
+  color: rgb(52, 73, 94);
+  transition: color 0.4s, background-color 0.4s;
+  text-shadow: 
+  1px 1px white, -1px 1px white, 
+  1px -1px white, -1px -1px white;
+  border-radius: 50px;
+}
+
+.github-contact:hover {
+  background-color: rgba(52, 73, 94, 0.65);
+  color: #ca8db8;
+}
+
+.github-contact:active {
+  transition: 0.1s;
+  color: transparent;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+@media (max-width: 700px) {
+  nav {
+    flex-direction: column;
+  }
+  nav > a {
+    width: 100%;
+    padding: 10px 0;
+    border-left: 0;
+  }
+  nav > a:first-child { border-bottom: 10px;}
+  nav > a:last-child { border-top: 10px; }
+
+  .project-article > div {
+    flex-direction: column
+  };
+}

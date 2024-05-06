@@ -19,13 +19,13 @@
     <h1><b>Carmelo Vazquez</b></h1>
     <h3><b>Programador "experto" en Front-end y C++</b></h3>
     <nav>
-      <a href=""><b>Proyectos</b></a>
-      <a href=""><b>Habilidades</b></a>
+      <a href="#about-me"><b>Proyectos</b></a>
+      <a href="#projects"><b>Habilidades</b></a>
       <a href=""><b>Contacto</b></a>
     </nav>
   </header>
 
-  <section>
+  <section id="about-me">
     <h2>Acerca de mí</h2>
     <p>
       Mi nombre completo es Carmelo Vazquez, soy un programador aficionado y 
@@ -40,11 +40,11 @@
   </section>
 
   <section>
-    <h2>Proyectos</h2>
+    <h2 id="projects">Proyectos</h2>
     <article class='project-article'>
       <h3>Implementación del Juego de la Vida de Conway</h3>
       <div>
-        <img class='img-responsive' src="./img/conway_project.gif" alt="">
+        <img class='mx-auto d-block' src="./img/conway_project.gif" alt="">
         <p>
           Este es un programa capaz de abrir una posición del Juego de la vida
           de Conway y hacer correr el juego. Está hecho en Python.
@@ -54,12 +54,32 @@
     <article class='project-article'>
       <h3>Snake en la terminal</h3>
       <div>
-        <img class='img-responsive' src="./img/snake_project.gif" alt="">
+        <img class='mx-auto d-block' src="./img/snake_project.gif" alt="">
         <p>
           Esta es una recreación del popular Snake hecho en la terminal con Python.
+          Cuenta con la posibilidad de cambiar el tamaño del juego, de cambiar la 
+          velocidad e incluso tiene un modo de juego con obstáculos
         </p>
       </div>
     </article>
+  </section>
+
+  <section>
+    <h2>Habilidades</h2>
+    <ol class="skills-list">
+      <li>Nivel medio de inglés</li>
+      <li>Ganas de programar</li>
+      <li>Mucha sabiduría si no se me pregunta acerca de lo que no sé</li>
+      <li>Una gran personalidad, si eso sirve</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Contacto</h2>
+    <h3>Pueden contactarme a través de mi GitHub</h3>
+    <div class="contact-button">
+      <a class="github-contact" href="https://github.com/Carmelo908/Carmelo908"><b>Carmelo908</b></a>
+    </div>
   </section>
 </body>
 
