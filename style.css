@@ -115,7 +115,7 @@ section > p {
 }
 
 .project-article > div > img {
-  width: calc(30% + 20px);
+  width: calc(30% + 40px);
 }
 
 .project-article > div > p {
@@ -140,7 +140,7 @@ h3 {
 }
 
 .contact-button {
-  width: 30%;
+  width: min-content;
   border-radius: 60px;
   border: rgb(52, 73, 94) solid 8px;
   margin: 50px auto;
@@ -185,6 +185,7 @@ h3 {
   }
   nav > a:first-child { border-bottom: 10px;}
   nav > a:last-child { border-top: 10px; }
+  nav > a { border-right: 0; }
 
   .project-article > div {
     flex-direction: column
