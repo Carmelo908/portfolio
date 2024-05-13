@@ -81,7 +81,7 @@ section {
   border-radius: 30px;
   border: rgba(0, 0, 0, 0.5) 5px solid;
   padding: 40px;
-  margin: 30px 2% 20px 2%;
+  margin: 20px 1%;
   background-color: rgba(0, 0, 0, 0.15);
   box-shadow: rgba(0, 0, 0, 0.4) -10px 10px 5px;
 }
@@ -99,6 +99,14 @@ section > p {
   padding: 10px 5%;
   font-size: 140%;
   text-shadow: rgba(0, 0, 0, 0.3) -2px 0 1px;
+}
+
+.my-photo {
+  border-radius: 100px;
+  border: rgba(0, 0, 0, 0.8) solid 5px;
+  display: block;
+  margin: 50px auto;
+  width: 20%;
 }
 
 .project-article {
@@ -134,7 +142,7 @@ section > p {
 }
 
 .skills-list {
-  padding: 40px 15%;
+  padding: 40px 25%;
   font-weight: 600;
 }
 
