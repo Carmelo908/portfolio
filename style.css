@@ -106,12 +106,14 @@ section > p {
   border-radius: 15px;
   padding: 20px;
   margin-bottom: 40px;
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .project-article > h3 {
   text-align: center;
   font-size: 200%;
   padding: 20px 40px 40px 40px;
+  text-shadow: rgba(0, 0, 0, 0.5) -2px 2px 3px;
 }
 
 .project-article > div > img {
@@ -120,12 +122,20 @@ section > p {
 
 .project-article > div > p {
   padding: 20px;
+  font-weight: 600;
+  font-size: 110%;
 }
 
 .project-article > div { display: flex }
 
+.carousel {
+  max-width: 800px;
+  margin: auto;
+}
+
 .skills-list {
   padding: 40px 15%;
+  font-weight: 600;
 }
 
 .skills-list > li {
@@ -139,40 +149,38 @@ h3 {
   padding: 40px;
 }
 
-.contact-button {
-  width: min-content;
-  border-radius: 60px;
-  border: rgb(52, 73, 94) solid 8px;
-  margin: 50px auto;
-  background-image: url(./img/header.jpg);
-  background-size: 600px;
+form {
+  max-width: 60%;
 }
 
-.github-contact {
-  display: block;
-  text-align: center;
-  font-size: 250%;
-  padding: 20px;
-  text-decoration: none;
-  color: rgb(52, 73, 94);
-  transition: color 0.4s, background-color 0.4s;
-  text-shadow: 
-  1px 1px white, -1px 1px white, 
-  1px -1px white, -1px -1px white;
+.input-box {
+  padding: 10px;
   border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 3px solid;
+  transition: 0.2s all;
 }
 
-.github-contact:hover {
-  background-color: rgba(52, 73, 94, 0.65);
-  color: #ca8db8;
+.input-box:hover {
+  scale: 1.04;
 }
 
-.github-contact:active {
-  transition: 0.1s;
-  color: transparent;
-  background-color: rgba(255, 255, 255, 0.3);
+.submit {
+  margin: 40px auto;
+  padding: 15px 30px;
+  font-size: 130%;
+  width: min-content;
+  border-radius: 40px;
+  transition: all 0.2s;
 }
 
+.submit:hover {
+  scale: 1.1;
+}
+
+.submit:active {
+  background-color: rgba(0, 0, 0, 0.8);
+}
 
 @media (max-width: 700px) {
   nav {
