@@ -33,10 +33,10 @@
     <h2>Acerca de mí</h2>
     <img src="img/barry.jpg" class="my-photo" alt="Barry de los pulentos">
     <p>
-      Mi nombre completo es Carmelo Vazquez, soy un programador aficionado y 
-      actualmente enfocado en el desarrollo en C++. Actualmente estudio en la 
-      Escuela de Educación Técnica N°2 "Independencia" y también estudio 
-      programación como autodidacta en mi tiempo libre.
+      ¡Hola!, Mi nombre completo es Carmelo Vazquez, soy un programador 
+      aficionado y actualmente enfocado en el desarrollo en C++. Actualmente 
+      estudio en la Escuela de Educación Técnica N°2 "Independencia" y también 
+      estudio programación como autodidacta en mi tiempo libre.
     </p>
     <p>
       Llevo estudiando programación desde mis 15 años, empezando en 2023, desde
@@ -55,7 +55,8 @@
           de Conway y hacer correr el juego. Está hecho en Python. las 
           posiciones son guardadas en archivos JSON y, después de abiertos, el 
           sistema autómata celular puede funcionar y se muestra como 
-          cuadrícula mediante la interfaz gráfica. 
+          cuadrícula mediante la interfaz gráfica. Implementa un algoritmo 
+          propio y utiliza los módulos Tkinter y JSON.
         </p>
       </div>
     </article>
@@ -68,7 +69,8 @@
           Python. Cuenta con la posibilidad de cambiar el tamaño del juego, de
           cambiar la velocidad e incluso tiene un modo de juego con obstáculos. 
           Internamente utiliza ejecución en paralelo para correr el juego y 
-          obtener el input del usuario a la vez.
+          obtener el input del usuario a la vez. El juego es fluido, así como 
+          controles.
         </p>
       </div>
     </article>
@@ -93,7 +95,7 @@
 
   <section>
     <h2>Habilidades</h2>
-    <ol class="skills-list">
+    <ul class="skills-list">
       <li>Nivel medio de inglés</li>
       <li>Ganas de programar</li>
       <li>Mucha sabiduría si no se me pregunta acerca de lo que no sé</li>
@@ -101,7 +103,7 @@
       <li>Soy inventor</li>
       <li>A pesar de eso, no me he inventado nada en esta lista</li>
       <li>Tengo superpoderes</li>
-    </ol>
+    </ul>
   </section>
 
   <section>
@@ -109,9 +111,10 @@
     
     <form class="d-flex flex-column gap-2 mx-auto">
       <label for="nombre-empresa">Nombre de la empresa</label>
-      <input type="text" id="nombre-empresa" class='input-box'>
+      <input type="email" id="nombre-empresa" class='input-box'>
       <label for="correo">Correo de contacto</label>
-      <input type="text" id="correo" class='input-box'>
+      <input type="text" id="correo" class='input-box'
+      pattern="^[A-Za-z0-9](([a-zA-Z0-9\.!\-#|\$%\^&\+/\_]+)*)@(?:[0-9a-zA-Z-]+\.)+[a-zA-Z]{2,9}$.*">
       <input type="submit" value="Enviar" class="submit">
     </form>
   </section>
